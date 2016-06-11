@@ -4,6 +4,61 @@ get_header(); ?>
 
 <div class="carousel-container full-height col-md-12">
 
+    <div class="row-fluid">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+            <!-- GOTOSHOP-button -->
+            <a href="shop" class="btn btn-default enter-button">enter shop</a>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <div class="item active">
+                        <div class="upper"
+                             style="background: url(<?php the_field('first_upper_background') ?>);
+                                 background-size: cover;">
+                            <div class="text">
+                                <h1><?php the_title(); ?></h1>
+                            </div>
+                        </div>
+                        <div class="below"
+                             style="background: url(<?php the_field('first_lower_background') ?>);
+                                 background-size: cover;">
+                            <div class="text">
+                                <p><?php the_content(); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="upper"
+                             style="background: url(<?php the_field('second_upper_background') ?>);
+                                 background-size: cover;">
+                            <div class="text">
+                                <h1><?php the_title(); ?></h1>
+                            </div>
+                        </div>
+                        <div class="below"
+                             style="background: url(<?php the_field('second_lower_background') ?>);
+                                 background-size: cover;">
+                            <div class="text">
+                                <p><?php the_field('next_slide'); ?></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php endwhile; else: ?>
+                    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
 </div>
 
 <?php
