@@ -7,9 +7,6 @@ $carousel = get_post(5);
 $carouselTitle = $carousel->post_title;
 $carouselContent = $carousel->post_content;
 $carouselID = $carousel->post->ID;
-$carousel->img1 = get_field('image1', $carousel->post->ID);
-$carousel->img2 = get_field('image2', $carousel->post->ID);
-$carousel->img3 = get_field('image3', $carousel->post->ID);
 ?>
 
 <div class="carousel-container full-height col-md-12">
@@ -20,9 +17,10 @@ $carousel->img3 = get_field('image3', $carousel->post->ID);
             <a href="shop" class="btn btn-default enter-button">enter shop</a>
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div class="item active">
                         <div class="upper"
-                             style="background: url(<?php $carousel->img1; ?>);
+                             style="background: url(<?php the_field('first_upper_background') ?>);
                                  background-size: cover;">
                             <div class="text">
                             </div>
@@ -48,6 +46,8 @@ $carousel->img3 = get_field('image3', $carousel->post->ID);
                             </div>
                         </div>
                     </div>
+                <?php endwhile; else: ?>
+                    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
             </div>
 
             <!-- Left and right controls -->
