@@ -20,20 +20,17 @@ $carousel->img3 = get_field('image3', $carousel->post->ID);
             <a href="shop" class="btn btn-default enter-button">enter shop</a>
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div class="item active">
                         <div class="upper"
                              style="background: url(<?php $carousel->img1; ?>);
                                  background-size: cover;">
                             <div class="text">
-                                <h1><?php the_title(); ?></h1>
                             </div>
                         </div>
                         <div class="below"
                              style="background: url(<?php the_field('first_lower_background') ?>);
                                  background-size: cover;">
                             <div class="text">
-                                <p><?php the_content(); ?></p>
                             </div>
                         </div>
                     </div>
@@ -42,18 +39,15 @@ $carousel->img3 = get_field('image3', $carousel->post->ID);
                              style="background: url(<?php the_field('second_upper_background') ?>);
                                  background-size: cover;">
                             <div class="text">
-                                <h1><?php the_title(); ?></h1>
                             </div>
                         </div>
                         <div class="below"
                              style="background: url(<?php the_field('second_lower_background') ?>);
                                  background-size: cover;">
                             <div class="text">
-                                <p><?php the_field('next_slide'); ?></p>
                             </div>
                         </div>
                     </div>
-                <?php endwhile; else: ?>
                     <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
             </div>
 
