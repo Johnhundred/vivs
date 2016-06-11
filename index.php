@@ -22,6 +22,8 @@ $aboutContent = $about->post_content;
 
 <div class="portfolio-container full-height col-md-12">
 
+    <h2>portfolio</h2>
+
 </div>
 
 <?php
