@@ -23,7 +23,7 @@ $carousel->img3 = get_field('image3', $carousel->post->ID);
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div class="item active">
                         <div class="upper"
-                             style="background: url(<?php the_field('first_upper_background') ?>);
+                             style="background: url(<?php $carousel->img1; ?>);
                                  background-size: cover;">
                             <div class="text">
                                 <h1><?php the_title(); ?></h1>
