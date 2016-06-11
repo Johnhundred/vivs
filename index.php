@@ -2,10 +2,24 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="carousel-container full-height col-md-12">
 
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+</div>
+
+<div class="about-container full-height col-md-12">
+
+</div>
+
+<div class="portfolio-container full-height col-md-12">
+
+</div>
+
+<div class="social-container full-height col-md-12">
+
+</div>
+
+<div class="contact-container full-height col-md-12">
+
+</div>
 
 <?php get_footer(); ?>

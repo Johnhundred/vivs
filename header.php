@@ -12,7 +12,7 @@
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-inverse" data-spy="affix">
+<nav class="navbar navbar-inverse col-md-12" data-spy="affix">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">WebSiteName</a>
@@ -29,5 +29,5 @@
   </div>
 </nav>
 
-<div class="container-fluid page-container"><!-- page-container -->
+<div class="container-fluid page-container col-md-12"><!-- page-container -->
 
