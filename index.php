@@ -2,6 +2,16 @@
 
 get_header(); ?>
 
+<?php
+$carousel = get_post(5);
+$carouselTitle = $carousel->post_title;
+$carouselContent = $carousel->post_content;
+$carouselID = $carousel->post->ID;
+$carousel->img1 = get_field('image1', $carousel->post->ID);
+$carousel->img2 = get_field('image2', $carousel->post->ID);
+$carousel->img3 = get_field('image3', $carousel->post->ID);
+?>
+
 <div class="carousel-container full-height col-md-12">
 
     <div class="row-fluid">
