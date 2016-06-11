@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-    <title>Viviana Schmidt Jewelry</title>
+    <!-- Designed & Developed by Particle Designs - particledesigns.dk -->
+    <title><?php bloginfo( 'name' ); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
