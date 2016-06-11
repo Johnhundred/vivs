@@ -64,6 +64,21 @@ $aboutContent = $about->post_content;
 
     <h2><?php echo $aboutTitle; ?></h2>
 
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <?php $img1 = the_field('about_image1'); ?>
+        <div class="f1_container">
+            <div class="f1_card shadow">
+                <div class="front face">
+                    <img src="<?php the_field('about_image1', 7); ?>"/>
+                </div>
+                <div class="back face center">
+                    <img src="<?php the_field('about_image2', 7); ?>"/>
+                </div>
+            </div>
+        </div>
+    <?php endwhile; else: ?>
+    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
+
     <?php echo $aboutContent; ?>
 
 </div>
