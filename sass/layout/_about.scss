@@ -20,7 +20,7 @@
   transform-style: preserve-3d;
   transition: all 1.0s linear;
 }
-.f1_container:hover f1_card {
+.f1_container:hover .f1_card {
   transform: rotateY(180deg);
   box-shadow: -5px 5px 5px #aaa;
 }
