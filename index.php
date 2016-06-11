@@ -48,7 +48,6 @@ $carousel->img3 = get_field('image3', $carousel->post->ID);
                             </div>
                         </div>
                     </div>
-                    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
             </div>
 
             <!-- Left and right controls -->
