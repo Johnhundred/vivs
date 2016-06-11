@@ -11,36 +11,26 @@ $carouselID = $carousel->post->ID;
 
 <div class="carousel-container full-height col-md-12">
 
-    <div class="row-fluid">
+    <div class="row">
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
-            <!-- GOTOSHOP-button -->
-            <a href="shop" class="btn btn-default enter-button">enter shop</a>
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div class="item active">
                         <div class="upper"
-                             style="background: url(<?php the_field('first_upper_background') ?>);
+                             style="background: url(<?php the_field('image1', 5); ?>);
                                  background-size: cover;">
-                            <div class="text">
-                            </div>
-                        </div>
-                        <div class="below"
-                             style="background: url(<?php the_field('first_lower_background') ?>);
-                                 background-size: cover;">
-                            <div class="text">
-                            </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="upper"
-                             style="background: url(<?php the_field('second_upper_background') ?>);
+                             style="background: url(<?php the_field('image2', 5); ?>);
                                  background-size: cover;">
-                            <div class="text">
-                            </div>
                         </div>
-                        <div class="below"
-                             style="background: url(<?php the_field('second_lower_background') ?>);
+                    </div>
+                    <div class="item active">
+                        <div class="upper"
+                             style="background: url(<?php the_field('image3', 5); ?>);
                                  background-size: cover;">
                             <div class="text">
                             </div>
