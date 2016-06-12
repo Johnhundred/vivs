@@ -21,3 +21,30 @@
   padding-left: 0 !important;
 }
 
+
+/* ---------------------- Fonts & Font Vars ------------------------- */
+
+@font-face {
+  font-family: 'GothamRounded-Bold';
+  src: url("fonts/GothamRounded-Book.otf") format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamRounded-Book';
+  src: url("fonts/GothamRounded-Book.otf") format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamRounded-Light';
+  src: url("fonts/GothamRounded-Light.otf") format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamRounded-Medium';
+  src: url("fonts/GothamRounded-Medium.otf") format('opentype');
+}
+
+$font-bold: 'GothamRounded-Bold';
+$font-light: 'GothamRounded-Light';
+$font-medium: 'GothamRounded-Medium';
+$font-regular: 'GothamRounded-Book';

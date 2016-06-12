@@ -68,24 +68,41 @@ $aboutContent = $about->post_content;
 
 <div class="about-container full-height col-md-12">
 
-    <h2><?php echo $aboutTitle; ?></h2>
+    <div class="container">
 
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <?php $img1 = the_field('about_image1'); ?>
-        <div class="f1_container">
-            <div class="f1_card shadow">
-                <div class="front face">
-                    <img src="<?php the_field('about_image1', 7); ?>"/>
+        <h2>- <?php echo $aboutTitle; ?> -</h2>
+
+        <div class="col-md-4 flip-images">
+
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php $img1 = the_field('about_image1'); ?>
+                <div class="f1_container">
+                    <div class="f1_card shadow">
+                        <div class="front face">
+                            <img src="<?php the_field('about_image1', 7); ?>"/>
+                        </div>
+                        <div class="back face center">
+                            <img src="<?php the_field('about_image2', 7); ?>"/>
+                        </div>
+                    </div>
                 </div>
-                <div class="back face center">
-                    <img src="<?php the_field('about_image2', 7); ?>"/>
-                </div>
-            </div>
+            <?php endwhile; else: ?>
+            <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
+
         </div>
-    <?php endwhile; else: ?>
-    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
 
-    <?php echo $aboutContent; ?>
+        <div class="col-md-2 center-block">
+            <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="alt text" class="center-block"/>
+
+        </div>
+
+
+        <div class="col-md-4 about-content">
+            <?php echo $aboutContent; ?>
+        </div>
+
+
+    </div>
 
 </div>
 
@@ -103,9 +120,38 @@ $socialContent = $social->post_content;
 
 <div class="social-container full-height col-md-12">
 
-    <h2><?php echo $socialTitle; ?></h2>
+    <div class="container">
 
-    <?php echo $socialContent; ?>
+        <h2 class="center-block">- <?php echo $socialTitle; ?> -</h2>
+
+        <div class="col-md-12 social-content">
+            <?php echo $socialContent; ?>
+        </div>
+        
+        <div class="center-block">
+            <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="alt text" class="center-block"/>
+            
+        </div>
+
+
+        <div class="col-md-12 center-block social-media">
+
+            <?php if( get_field('instagram_link', 9) != ''): ?>
+                <a href="<?php the_field('instagram_link', 9) ?>" target="_blank" class="center-block">Instagram</a>
+            <?php endif; ?>
+
+            <?php if( get_field('pinterest_link', 9) != ''): ?>
+                <a href="<?php the_field('pinterest_link', 9) ?>" target="_blank" class="center-block">Pinterest</a>
+            <?php endif; ?>
+
+            <?php if( get_field('facebook_link', 9) != ''): ?>
+               <a href="<?php the_field('facebook_link', 9) ?>" target="_blank" class="center-block">Facebook</a>
+            <?php endif; ?>
+
+
+        </div>
+
+    </div>
 
 </div>
 
@@ -117,9 +163,35 @@ $contactContent = $contact->post_content;
 
 <div class="contact-container full-height col-md-12">
 
-    <h2><?php echo $contactTitle; ?></h2>
+    <div class="container">
 
-    <?php echo $contactContent; ?>
+        <h2 class="center-block">- <?php echo $contactTitle; ?> -</h2>
+
+        <div class="col-md-12 center-block name_mail">
+
+            <?php if( get_field('contact_name', 11) != ''): ?>
+                <h3><?php the_field('contact_name', 11) ?></h3>
+            <?php endif; ?>
+
+            <?php if( get_field('contact_email', 11) != ''): ?>
+                <h3><?php the_field('contact_email', 11) ?></h3>
+            <?php endif; ?>
+
+        </div>
+
+        <div class="col-md-12 center-block nr_loc">
+
+            <?php if( get_field('contact_phonenr', 11) != ''): ?>
+                <h3><?php the_field('contact_phonenr', 11) ?></h3>
+            <?php endif; ?>
+
+            <?php if( get_field('contact_city_country', 11) != ''): ?>
+                <h3><?php the_field('contact_city_country', 11) ?></h3>
+            <?php endif; ?>
+
+        </div>
+
+    </div>
 
 </div>
 
