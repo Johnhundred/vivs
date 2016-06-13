@@ -146,7 +146,7 @@ $inspirationContent = apply_filters('the_content', $inspiration[0]->post_content
 
         <h2 class="center-block"><span class="strong-line"></span><?php echo $inspirationTitle; ?><span class="strong-line"></span></h2>
 
-        <div class="col-md-12 ideology-content center-block">
+        <div class="col-md-12 inspiration-content center-block">
             <?php echo $inspirationContent; ?>
         </div>
 
