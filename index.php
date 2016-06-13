@@ -176,6 +176,8 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
 
         <h2 class="center-block">- <?php echo $portfolioTitle; ?> -</h2>
 
+        <div class="school-projects-container col-md-5">
+
         <?php
             $args = array( 'category' => 2, 'post_type' =>  'post' );
             $school = get_posts( $args );
@@ -194,23 +196,37 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
 
         <?php endforeach; ?>
 
+        </div>
+
+        <div class="personal-projects-container col-md-5 col-md-offset-2">
+
         <?php
             $args = array( 'category' => 3, 'post_type' =>  'post' );
             $school = get_posts( $args );
             $count = 1;
             foreach ($school as $post) :  setup_postdata($post);
             ?>
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-            <?php echo apply_filters('the_content', $post->post_content); ?>
+            <div class="col-md-4 flip-images">
 
-            <a href="#portfolio" data-toggle="modal" data-target="pers-<?php echo $count; ?>"><?php echo get_field( "display_image" ); ?></a>
+                <div class="f1_container">
+                    <div class="f1_card shadow">
+                        <div class="front face">
+                            <img src="<?php echo get_field( 'display_image' ); ?>">
+                        </div>
+                        <div class="back face center">
+                            <a href="#portfolio" data-toggle="modal" data-target="pers-<?php echo $count; ?>"><?php echo get_field( "display_text" ); ?></a>
+                        </div>
+                    </div>
+                </div>
 
-            <?php echo get_field( "display_text" ); ?>
+            </div>
 
             <?php $count++; ?>
 
         <?php endforeach; ?>
+
+        </div>
 
         <a class="center-block down-arrow" href="#portfolio">
             <span class="glyphicon glyphicon-chevron-down"></span>
