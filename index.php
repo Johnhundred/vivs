@@ -52,7 +52,7 @@ $carouselID = $carousel->post->ID;
             </div>
         </div>
 
-        <a href="#">
+        <a class="center-block down-arrow" href="#">
             <span class="glyphicon glyphicon-chevron-down"></span>
         </a>
 
@@ -151,6 +151,10 @@ $socialContent = $social->post_content;
 
         </div>
 
+        <a class="center-block down-arrow" href="#">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+
     </div>
 
 </div>
@@ -190,6 +194,11 @@ $contactContent = $contact->post_content;
             <?php endif; ?>
 
         </div>
+
+        <a class="center-block down-arrow" href="#">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+
 
     </div>
 
