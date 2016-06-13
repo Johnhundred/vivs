@@ -21,12 +21,15 @@
   h2 {
     text-align: center;
   }
+
+  .portfolio-subtitle-container {
+    padding-top: 5em;
+  }
+
   .personal-projects-container {
     height: 100%;
     position: relative;
-    h2 {
 
-    }
     img {
       width: 100%;
       height: auto;
@@ -131,3 +134,14 @@
   background-repeat: no-repeat;
 }
 
+.modal-body {
+
+  h2 {
+    font-family: $font-bold;
+  }
+
+  P {
+    font-family: $font-regular;
+    font-size: 1.5em;
+  }
+}
