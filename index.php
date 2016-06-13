@@ -186,7 +186,7 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
 
             <?php echo apply_filters('the_content', $post->post_content); ?>
 
-            <a href="#portfolio" data-target="scho-<?php echo $count; ?>"><?php echo get_field( "display_image" ); ?></a>
+            <a href="#portfolio" data-toggle="modal" data-target="scho-<?php echo $count; ?>"><?php echo get_field( "display_image" ); ?></a>
 
             <?php echo get_field( "display_text" ); ?>
 
