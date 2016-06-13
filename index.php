@@ -101,10 +101,65 @@ $aboutContent = apply_filters('the_content', $about->post_content);
             </div>
         </div>
 
+        <a class="center-block down-arrow" href="#">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+
 
     </div>
 
 </div>
+
+<?php
+$ideology = get_post(58);
+$ideologyTitle = $ideology->post_title;
+$ideologyContent = apply_filters('the_content', $ideology->post_content);
+?>
+
+<div id="ideology" class="ideology-container full-height col-md-12">
+
+    <div class="container">
+
+        <h2 class="center-block">- <?php echo $ideologyTitle; ?> -</h2>
+
+        <div class="col-md-12 ideology-content center-block">
+            <?php echo $ideologyContent; ?>
+        </div>
+
+        <a class="center-block down-arrow" href="#">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+
+    </div>
+
+
+</div>
+
+<?php
+$inspiration = get_post(60);
+$inspirationTitle = $inspiration->post_title;
+$inspirationContent = apply_filters('the_content', $inspiration->post_content);
+?>
+
+<div id="ideology" class="inspiration-container full-height col-md-12">
+
+    <div class="container">
+
+        <h2 class="center-block">- <?php echo $inspirationTitle; ?> -</h2>
+
+        <div class="col-md-12 ideology-content center-block">
+            <?php echo $inspirationContent; ?>
+        </div>
+
+        <a class="center-block down-arrow" href="#">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+
+    </div>
+
+
+</div>
+
 
 <div id="portfolio" class="portfolio-container full-height col-md-12">
 
