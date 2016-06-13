@@ -6,6 +6,17 @@
   .container {
     height: 100%;
   }
+
+  .projects-line {
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
   h2 {
     text-align: center;
   }
