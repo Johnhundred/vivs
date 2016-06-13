@@ -1,8 +1,9 @@
-/* -------------------- Ideology and Inspiration styling ---------------------------- */
+/* -------------------- Ideology Page styling ---------------------------- */
 
 .ideology-container {
 
   text-align: center;
+  padding-top: 10vh;
 
   p {
     font-size: 1.5em ;
@@ -16,17 +17,3 @@
 
 }
 
-
-.inspiration-container {
-  text-align: center;
-  margin-top: 2em;
-
-  p {
-    font-size: 1.5em;
-  }
-
-  .inspiration-container {
-    font-family: $font-regular;
-
-  }
-}

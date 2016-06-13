@@ -1,4 +1,5 @@
 <?php
+
 function Vivs_scripts() {
     wp_enqueue_style( 'style-vivs', get_stylesheet_uri() );
     wp_enqueue_script( 'script-vivs', get_template_directory_uri() . '/js/vivs.js', array(), '1.0.0', true );
