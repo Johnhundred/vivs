@@ -217,7 +217,7 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
                             <img src="<?php echo get_field( 'display_image' ); ?>">
                         </div>
                         <div class="back face center">
-                            <a href="#portfolio" data-toggle="modal" data-target="pers-<?php echo $count; ?>"><?php echo get_field( "display_text" ); ?></a>
+                            <a href="#" data-toggle="modal" data-target="#pers-<?php echo $count; ?>"><?php echo get_field( "display_text" ); ?></a>
                         </div>
                     </div>
                 </div>
