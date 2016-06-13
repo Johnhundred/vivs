@@ -2,6 +2,9 @@
 
 .portfolio-container {
   padding-top: 10vh;
+  .container {
+
+  }
   h2 {
     text-align: center;
   }
@@ -72,6 +75,19 @@
       top: 150px;
       margin-top: 30px;*/
     }
+  }
+}
+
+.portfolio-logo-container {
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  img {
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
   }
 }
 

@@ -178,6 +178,8 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
 
         <div class="school-projects-container col-md-5">
 
+        <h2 class="center-block">- school projects -</h2>
+
         <?php
             $args = array( 'category' => 2, 'post_type' =>  'post' );
             $school = get_posts( $args );
@@ -200,7 +202,15 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
 
         </div>
 
-        <div class="personal-projects-container col-md-5 col-md-offset-2">
+        <div class="portfolio-logo-container col-md-2">
+
+            <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="alt text" class="about-logo"/>
+
+        </div>
+
+        <div class="personal-projects-container col-md-5">
+
+        <h2 class="center-block">- personal projects -</h2>
 
         <?php
             $args = array( 'category' => 3, 'post_type' =>  'post' );
