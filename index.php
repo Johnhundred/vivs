@@ -82,7 +82,7 @@ $aboutContent = apply_filters('the_content', $about->post_content);
                             <img src="<?php the_field('about_image1', 7); ?>"/>
                         </div>
                         <div class="back face center">
-                            <a href="#">Read My CV</a>
+                            <a href="<?php bloginfo('template_directory'); ?>/pdfs/CV.pdf">Read My CV</a>
                         </div>
                     </div>
                 </div>

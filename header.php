@@ -13,21 +13,16 @@
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-inverse col-md-12" data-spy="affix">
+<nav class="navbar col-md-12 top-nav" data-spy="affix">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#carousel">Home</a></li>
+    <ul class="nav navbar-nav center-block">
       <li><a href="#about">About</a></li>
+      <li><a href="#ideology">Ideology</a></li>
+      <li><a href="#inspiration">Inspiration</a></li>
+      <li class="logo-li"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="alt text" class="nav-logo"/></a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#social">Social</a></li>
       <li><a href="#contact">Contact</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>

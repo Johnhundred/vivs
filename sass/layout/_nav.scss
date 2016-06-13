@@ -8,12 +8,50 @@
 .down-arrow {
   position: absolute;
   bottom: 0;
-  right: 48%;
+  right: 50%;
   color: black;
   font-size: 50px;
+  margin-right: -27px;
 }
 
 .down-arrow:focus, .down-arrow:hover {
   color: black !important;
+}
+
+.top-nav {
+  background-color: white;
+  .container-fluid {
+    position: relative;
+    ul {
+      position: relative;
+      left: 50%;
+      transform: translatex(-50%);
+      height: auto;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      li {
+        float: none;
+        display: inline-block;
+        position: relative;
+        a {
+          color: black;
+          display: block;
+        }
+        a:hover, a:focus {
+          background-color: white;
+          text-decoration: underline;
+        }
+      }
+      .logo-li {
+        a {
+          img {
+            max-width: 10vw;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
 }
 
