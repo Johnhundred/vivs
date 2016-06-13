@@ -16,13 +16,13 @@
 <nav class="navbar col-md-12 top-nav" data-spy="affix">
   <div class="container-fluid">
     <ul class="nav navbar-nav center-block">
-      <li><a href="#about">About</a></li>
-      <li><a href="#ideology">Ideology</a></li>
-      <li><a href="#inspiration">Inspiration</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#ideology">ideology</a></li>
+      <li><a href="#inspiration">inspiration</a></li>
       <li class="logo-li"><a href="#carousel"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="alt text" class="nav-logo"/></a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#social">Social</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#portfolio">portfolio</a></li>
+      <li><a href="#social">social</a></li>
+      <li><a href="#contact">contact</a></li>
     </ul>
   </div>
 </nav>

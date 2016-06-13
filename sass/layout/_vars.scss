@@ -52,3 +52,16 @@ $font-bold: 'GothamRounded-Bold';
 $font-light: 'GothamRounded-Light';
 $font-medium: 'GothamRounded-Medium';
 $font-regular: 'GothamRounded-Book';
+
+
+/* ---------------------- Global Styling ---------------------------- */
+
+.strong-line {
+  width: 85px;
+  height: 1px;
+  background-color: black;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 65px;
+  margin-left: 65px;
+}

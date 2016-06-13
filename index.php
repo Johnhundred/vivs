@@ -67,7 +67,7 @@ $aboutContent = apply_filters('the_content', $about->post_content);
 
     <div class="container">
 
-        <h2>- <?php echo $aboutTitle; ?> -</h2>
+        <h2><span class="strong-line"></span><?php echo $aboutTitle; ?><span class="strong-line"></span></h2>
 
         <div class="col-md-4 flip-images">
 
@@ -130,7 +130,7 @@ $ideologyContent = apply_filters('the_content', $ideology[0]->post_content);
 
     <div class="container">
 
-        <h2 class="center-block">- <?php echo $ideologyTitle; ?> -</h2>
+        <h2 class="center-block"><span class="strong-line"></span><?php echo $ideologyTitle; ?><span class="strong-line"></span></h2>
 
         <div class="col-md-12 ideology-content center-block">
             <?php echo $ideologyContent; ?>
@@ -160,9 +160,9 @@ $inspirationContent = apply_filters('the_content', $inspiration[0]->post_content
 
     <div class="container">
 
-        <h2 class="center-block">- <?php echo $inspirationTitle; ?> -</h2>
+        <h2 class="center-block"><span class="strong-line"></span><?php echo $inspirationTitle; ?><span class="strong-line"></span></h2>
 
-        <div class="col-md-12 ideology-content center-block">
+        <div class="col-md-12 inspiration-content center-block">
             <?php echo $inspirationContent; ?>
         </div>
 
@@ -190,13 +190,13 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
 
     <div class="container">
 
-        <h2 class="center-block">- <?php echo $portfolioTitle; ?> -</h2>
+        <h2 class="center-block"><span class="strong-line"></span><?php echo $portfolioTitle; ?><span class="strong-line"></span></h2>
 
         <div class="portfolio-subtitle-container col-md-12">
 
-            <h2 class="left col-md-5">- school projects -</h2>
+            <h2 class="left col-md-5"><span class="projects-line"></span>school projects<span class="projects-line"></span></h2>
 
-            <h2 class="right col-md-5 col-md-offset-2">- personal projects -</h2>
+            <h2 class="right col-md-5 col-md-offset-2"><span class="projects-line"></span>personal projects<span class="projects-line"></span></h2>
 
         </div>
 
@@ -321,7 +321,7 @@ $socialContent = $social->post_content;
 
     <div class="container">
 
-        <h2 class="center-block">- <?php echo $socialTitle; ?> -</h2>
+        <h2 class="center-block"><span class="strong-line"></span><?php echo $socialTitle; ?><span class="strong-line"></span></h2>
 
         <div class="col-md-12 social-content">
             <?php echo $socialContent; ?>
@@ -368,7 +368,7 @@ $contactContent = $contact->post_content;
 
     <div class="container">
 
-        <h2 class="center-block">- <?php echo $contactTitle; ?> -</h2>
+        <h2 class="center-block"><span class="strong-line"></span><?php echo $contactTitle; ?><span class="strong-line"></span></h2>
 
         <div class="col-md-12 center-block name_mail">
 

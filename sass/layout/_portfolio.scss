@@ -7,15 +7,29 @@
     height: 100%;
     width: 61.5%;
   }
+
+  .projects-line {
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
   h2 {
     text-align: center;
   }
+
+  .portfolio-subtitle-container {
+    padding-top: 5em;
+  }
+
   .personal-projects-container {
     height: 100%;
     position: relative;
-    h2 {
 
-    }
     img {
       width: 100%;
       height: auto;
@@ -122,3 +136,14 @@
   background-repeat: no-repeat;
 }
 
+.modal-body {
+
+  h2 {
+    font-family: $font-bold;
+  }
+
+  P {
+    font-family: $font-regular;
+    font-size: 1.5em;
+  }
+}
