@@ -89,15 +89,11 @@ $aboutContent = $about->post_content;
             <?php endwhile; else: ?>
             <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
 
-        </div>
-
-        <div class="col-md-2 center-block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="alt text" class="center-block"/>
+            <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="alt text" class="about-logo"/>
 
         </div>
 
-
-        <div class="col-md-4 about-content">
+        <div class="col-md-8 about-content">
             <?php echo $aboutContent; ?>
         </div>
 
