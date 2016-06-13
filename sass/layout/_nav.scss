@@ -7,13 +7,13 @@
 
 .down-arrow {
   position: absolute;
-  top: 90vh;
+  bottom: 0;
   right: 48%;
   color: black;
   font-size: 50px;
+}
 
-  a:focus, a:hover {
-    color: black !important;
-  }
+.down-arrow:focus, .down-arrow:hover {
+  color: black !important;
 }
 

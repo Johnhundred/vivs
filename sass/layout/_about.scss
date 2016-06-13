@@ -2,7 +2,8 @@
 
 .about-container {
   padding-top: 10vh;
-  height: 100vh;
+  padding-bottom: 10vh;
+  height: 100%;
   text-align: center;
   h2 {
     margin-bottom: 10%;
@@ -16,19 +17,19 @@
       position: relative;
       left: 0;
       width: 100%;
-      height: 350px;
+      height: auto;
       margin-top: -25px;
     }
     .about-logo {
       max-width: 75%;
       height: auto;
-      margin-top: 15%;
+      margin-top: 20%;
     }
   }
   .about-content {
     font-family: $font-regular;
     display: block;
-    text-align: left;
+    font-size: 1.3em;
     padding-left: 10%;
     .aligncenter {
       text-align: center;
