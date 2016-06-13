@@ -192,15 +192,12 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
             $count = 1;
             foreach ($school as $post) :  setup_postdata($post);
             ?>
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-            <?php echo apply_filters('the_content', $post->post_content); ?>
+            <div class="school-pic">
 
-            <a href="#" data-toggle="modal" data-target="#scho-<?php echo $count; ?>"><?php echo get_field( "display_image" ); ?></a>
+                <a href="#" data-toggle="modal" data-target="#scho-<?php echo $count; ?>"><div class="tint" style="background: url(<?php echo get_field( 'display_image' ); ?>)"></div></a>
 
-            <?php echo get_field( "display_text" ); ?>
-
-
+            </div>
 
                 <div class="portfolio-modal modal fade" id="scho-<?php echo $count; ?>" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-content">
@@ -215,7 +212,7 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
                                 <div class="col-lg-8 col-lg-offset-2">
                                     <div class="modal-body">
                                         <!-- Project Details Go Here -->
-                                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                        <h2><?php the_title(); ?></h2>
                                         <?php echo apply_filters('the_content', $post->post_content); ?>
 
                                         <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -249,18 +246,9 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
             foreach ($school as $post) :  setup_postdata($post);
             ?>
 
-            <div class="col-md-4 flip-images">
+            <div class="personal-pic">
 
-                <div class="f1_container">
-                    <div class="f1_card shadow">
-                        <div class="front face">
-                            <img src="<?php echo get_field( 'display_image' ); ?>">
-                        </div>
-                        <div class="back face center">
-                            <a href="#" data-toggle="modal" data-target="#pers-<?php echo $count; ?>"><?php echo get_field( "display_text" ); ?></a>
-                        </div>
-                    </div>
-                </div>
+                <a href="#" data-toggle="modal" data-target="#pers-<?php echo $count; ?>"><div class="tint" style="background: url(<?php echo get_field( 'display_image' ); ?>)"></div></a>
 
             </div>
 
@@ -279,7 +267,7 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
                                 <div class="col-lg-8 col-lg-offset-2">
                                     <div class="modal-body">
                                         <!-- Project Details Go Here -->
-                                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                        <h2><?php the_title(); ?></h2>
                                         <?php echo apply_filters('the_content', $post->post_content); ?>
 
                                         <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
