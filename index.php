@@ -107,9 +107,14 @@ $aboutContent = apply_filters('the_content', $about->post_content);
 </div>
 
 <?php
-$ideology = get_post(58);
-$ideologyTitle = $ideology->post_title;
-$ideologyContent = apply_filters('the_content', $ideology->post_content);
+$ideology = get_posts(
+    array(
+        'name'      => 'ideology',
+        'post_type' => 'page'
+    )
+);
+$ideologyTitle = $ideology[0]->post_title;
+$ideologyContent = apply_filters('the_content', $ideology[0]->post_content);
 ?>
 
 <div id="ideology" class="ideology-container full-height col-md-12">
@@ -135,6 +140,15 @@ $ideologyContent = apply_filters('the_content', $ideology->post_content);
 $inspiration = get_post(60);
 $inspirationTitle = $inspiration->post_title;
 $inspirationContent = apply_filters('the_content', $inspiration->post_content);
+
+$inspiration = get_posts(
+    array(
+        'name'      => 'inspiration',
+        'post_type' => 'page'
+    )
+);
+$inspirationTitle = $inspiration[0]->post_title;
+$inspirationContent = apply_filters('the_content', $inspiration[0]->post_content);
 ?>
 
 <div id="inspiration" class="inspiration-container full-height col-md-12">
