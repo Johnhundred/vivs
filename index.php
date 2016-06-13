@@ -52,7 +52,7 @@ $carouselID = $carousel->post->ID;
             </div>
         </div>
 
-        <a class="center-block down-arrow" href="#">
+        <a class="center-block down-arrow" href="#about">
             <span class="glyphicon glyphicon-chevron-down"></span>
         </a>
 
@@ -95,13 +95,9 @@ $aboutContent = apply_filters('the_content', $about->post_content);
 
         <div class="col-md-8 about-content">
             <?php echo $aboutContent; ?>
-
-            <div class="about-signature col-md-10 col-md-offset-1">
-                <img src="<?php the_field('about_image2', 7); ?>"/>
-            </div>
         </div>
 
-        <a class="center-block down-arrow" href="#">
+        <a class="center-block down-arrow" href="#ideology">
             <span class="glyphicon glyphicon-chevron-down"></span>
         </a>
 
@@ -126,7 +122,7 @@ $ideologyContent = apply_filters('the_content', $ideology->post_content);
             <?php echo $ideologyContent; ?>
         </div>
 
-        <a class="center-block down-arrow" href="#">
+        <a class="center-block down-arrow" href="#inspiration">
             <span class="glyphicon glyphicon-chevron-down"></span>
         </a>
 
@@ -141,7 +137,7 @@ $inspirationTitle = $inspiration->post_title;
 $inspirationContent = apply_filters('the_content', $inspiration->post_content);
 ?>
 
-<div id="ideology" class="inspiration-container full-height col-md-12">
+<div id="inspiration" class="inspiration-container full-height col-md-12">
 
     <div class="container">
 
@@ -151,7 +147,7 @@ $inspirationContent = apply_filters('the_content', $inspiration->post_content);
             <?php echo $inspirationContent; ?>
         </div>
 
-        <a class="center-block down-arrow" href="#">
+        <a class="center-block down-arrow" href="#portfolio">
             <span class="glyphicon glyphicon-chevron-down"></span>
         </a>
 
@@ -206,7 +202,7 @@ $socialContent = $social->post_content;
 
         </div>
 
-        <a class="center-block down-arrow" href="#">
+        <a class="center-block down-arrow" href="#contact">
             <span class="glyphicon glyphicon-chevron-down"></span>
         </a>
 
