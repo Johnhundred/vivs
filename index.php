@@ -52,7 +52,7 @@ $carouselID = $carousel->post->ID;
             </div>
         </div>
 
-        <a class="center-block down-arrow" href="#">
+        <a class="center-block down-arrow" href="#about">
             <span class="glyphicon glyphicon-chevron-down"></span>
         </a>
 
@@ -151,7 +151,7 @@ $socialContent = $social->post_content;
 
         </div>
 
-        <a class="center-block down-arrow" href="#">
+        <a class="center-block down-arrow" href="#contact">
             <span class="glyphicon glyphicon-chevron-down"></span>
         </a>
 
