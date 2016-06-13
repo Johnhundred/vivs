@@ -1,6 +1,7 @@
 /* -------------------- About Page Styling -------------------- */
 
 .about-container {
+  padding-top: 10vh;
   height: 100vh;
   text-align: center;
   h2 {
@@ -29,6 +30,22 @@
     display: block;
     text-align: left;
     padding-left: 10%;
+    .aligncenter {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+    }
+    .alignright {
+      text-align: right;
+      float: right;
+    }
+    .alignleft {
+      text-align: left;
+      float: left;
+    }
+    img {
+      text-align: center;
+    }
     .about-signature {
       text-align: center;
       img {

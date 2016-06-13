@@ -5,3 +5,15 @@
   z-index: 100;
 }
 
+.down-arrow {
+  position: absolute;
+  top: 90vh;
+  right: 48%;
+  color: black;
+  font-size: 50px;
+
+  a:focus, a:hover {
+    color: black !important;
+  }
+}
+
