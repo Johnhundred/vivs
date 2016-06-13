@@ -176,9 +176,15 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
 
         <h2 class="center-block">- <?php echo $portfolioTitle; ?> -</h2>
 
-        <div class="school-projects-container col-md-5">
+        <div class="portfolio-subtitle-container col-md-12">
 
-        <h2 class="center-block">- school projects -</h2>
+            <h2 class="left col-md-5">- school projects -</h2>
+
+            <h2 class="right col-md-5 col-md-offset-2">- personal projects -</h2>
+
+        </div>
+
+        <div class="school-projects-container col-md-5">
 
         <?php
             $args = array( 'category' => 2, 'post_type' =>  'post' );
@@ -235,8 +241,6 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
         </div>
 
         <div class="personal-projects-container col-md-5">
-
-        <h2 class="center-block">- personal projects -</h2>
 
         <?php
             $args = array( 'category' => 3, 'post_type' =>  'post' );
