@@ -9,7 +9,7 @@ $carouselContent = $carousel->post_content;
 $carouselID = $carousel->post->ID;
 ?>
 
-<div class="carousel-container full-height col-md-12">
+<div id="carousel" class="carousel-container full-height col-md-12">
 
     <div class="container">
 
@@ -66,7 +66,7 @@ $aboutTitle = $about->post_title;
 $aboutContent = $about->post_content;
 ?>
 
-<div class="about-container full-height col-md-12">
+<div id="about" class="about-container full-height col-md-12">
 
     <div class="container">
 
@@ -106,7 +106,7 @@ $aboutContent = $about->post_content;
 
 </div>
 
-<div class="portfolio-container full-height col-md-12">
+<div id="portfolio" class="portfolio-container full-height col-md-12">
 
     <h2>portfolio</h2>
 
@@ -118,7 +118,7 @@ $socialTitle = $social->post_title;
 $socialContent = $social->post_content;
 ?>
 
-<div class="social-container full-height col-md-12">
+<div id="social" class="social-container full-height col-md-12">
 
     <div class="container">
 
@@ -161,7 +161,7 @@ $contactTitle = $contact->post_title;
 $contactContent = $contact->post_content;
 ?>
 
-<div class="contact-container full-height col-md-12">
+<div id="contact" class="contact-container full-height col-md-12">
 
     <div class="container">
 
