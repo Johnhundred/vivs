@@ -17,3 +17,40 @@
   color: black !important;
 }
 
+.top-nav {
+  background-color: white;
+  .container-fluid {
+    position: relative;
+    ul {
+      position: relative;
+      left: 50%;
+      transform: translatex(-50%);
+      height: auto;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      li {
+        float: none;
+        display: inline-block;
+        position: relative;
+        a {
+          color: black;
+          display: block;
+        }
+        a:hover, a:focus {
+          background-color: white;
+          text-decoration: underline;
+        }
+      }
+      .logo-li {
+        a {
+          img {
+            max-width: 10vw;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
