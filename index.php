@@ -192,6 +192,8 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
 
             <?php echo get_field( "display_text" ); ?>
 
+
+
             <?php $count++; ?>
 
         <?php endforeach; ?>
@@ -221,6 +223,35 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
                 </div>
 
             </div>
+
+                <!--<a type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#pers-1">Open Modal</a>-->
+
+                <div class="portfolio-modal modal fade" id="pers-1" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-content">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2">
+                                    <div class="modal-body">
+                                        <!-- Project Details Go Here -->
+                                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                        <?php echo apply_filters('the_content', $post->post_content); ?>
+
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
 
             <?php $count++; ?>
 
