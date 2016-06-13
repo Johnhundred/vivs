@@ -95,6 +95,10 @@ $aboutContent = apply_filters('the_content', $about->post_content);
 
         <div class="col-md-8 about-content">
             <?php echo $aboutContent; ?>
+
+            <div class="about-signature col-md-10 col-md-offset-1">
+                <img src="<?php the_field('about_image2', 7); ?>"/>
+            </div>
         </div>
 
 
