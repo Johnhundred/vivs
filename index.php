@@ -179,30 +179,36 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
         <?php
             $args = array( 'category' => 2, 'post_type' =>  'post' );
             $school = get_posts( $args );
+            $count = 1;
             foreach ($school as $post) :  setup_postdata($post);
             ?>
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
             <?php echo apply_filters('the_content', $post->post_content); ?>
 
-            <?php echo get_field( "display_image" ); ?>
+            <a href="#portfolio" data-target="scho-<?php echo $count; ?>"><?php echo get_field( "display_image" ); ?></a>
 
             <?php echo get_field( "display_text" ); ?>
+
+            <?php $count++; ?>
 
         <?php endforeach; ?>
 
         <?php
             $args = array( 'category' => 3, 'post_type' =>  'post' );
             $school = get_posts( $args );
+            $count = 1;
             foreach ($school as $post) :  setup_postdata($post);
             ?>
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
             <?php echo apply_filters('the_content', $post->post_content); ?>
 
-            <?php echo get_field( "display_image" ); ?>
+            <a href="#portfolio" data-toggle="modal" data-target="pers-<?php echo $count; ?>"><?php echo get_field( "display_image" ); ?></a>
 
             <?php echo get_field( "display_text" ); ?>
+
+            <?php $count++; ?>
 
         <?php endforeach; ?>
 
