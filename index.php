@@ -63,7 +63,7 @@ $carouselID = $carousel->post->ID;
 <?php
 $about = get_post(7);
 $aboutTitle = $about->post_title;
-$aboutContent = $about->post_content;
+$aboutContent = apply_filters('the_content', $about->post_content);
 ?>
 
 <div id="about" class="about-container full-height col-md-12">
@@ -82,22 +82,18 @@ $aboutContent = $about->post_content;
                             <img src="<?php the_field('about_image1', 7); ?>"/>
                         </div>
                         <div class="back face center">
-                            <img src="<?php the_field('about_image2', 7); ?>"/>
+                            <a href="#">Read My CV</a>
                         </div>
                     </div>
                 </div>
             <?php endwhile; else: ?>
             <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
 
-        </div>
-
-        <div class="col-md-2 center-block">
-            <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="alt text" class="center-block"/>
+            <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="alt text" class="about-logo"/>
 
         </div>
 
-
-        <div class="col-md-4 about-content">
+        <div class="col-md-8 about-content">
             <?php echo $aboutContent; ?>
         </div>
 

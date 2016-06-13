@@ -5,4 +5,7 @@ function Vivs_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'Vivs_scripts' );
 
+add_filter( 'the_content', 'wpautop' );
+add_filter( 'the_exerpt', 'wpautop' );
+
 ?>
