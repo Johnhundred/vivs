@@ -63,7 +63,7 @@ $carouselID = $carousel->post->ID;
 <?php
 $about = get_post(7);
 $aboutTitle = $about->post_title;
-$aboutContent = $about->post_content;
+$aboutContent = apply_filters('the_content', $about->post_content);
 ?>
 
 <div id="about" class="about-container full-height col-md-12">
@@ -82,7 +82,7 @@ $aboutContent = $about->post_content;
                             <img src="<?php the_field('about_image1', 7); ?>"/>
                         </div>
                         <div class="back face center">
-                            <img src="<?php the_field('about_image2', 7); ?>"/>
+                            <a href="#">Read My CV</a>
                         </div>
                     </div>
                 </div>
