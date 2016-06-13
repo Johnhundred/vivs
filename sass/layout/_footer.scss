@@ -1,0 +1,42 @@
+/* --------------------------- Footer styling ------------------------ */
+
+.footer-container {
+  background-color: #faeaea;
+
+
+  #copyright {
+    padding-top: 20px;
+    font-family: $font-medium;
+    
+  }
+  
+  #pd {
+    font-family: $font-light;
+    
+    a {
+      color: black;
+    }
+    
+  }
+
+  .footer-links {
+    padding-top: 30px;
+    text-align: right;
+  }
+
+  .social-buttons {
+    width: 100px;
+    height: 100px;
+    display: inline;
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
+
+  }
+
+
+
+
+}
