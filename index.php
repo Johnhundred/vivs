@@ -17,27 +17,24 @@ $carouselID = $carousel->post->ID;
             <div id="myCarousel" class="carousel slide center-block col-md-12" data-ride="carousel" data-interval="10000">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner center-block" role="listbox">
-                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                        <div class="item active">
-                            <div class="upper center-block"
-                                 style="background: url(<?php the_field('image1', 5); ?>);
-                                     background-size: cover; background-position: center;">
-                            </div>
+                    <div class="item active">
+                        <div class="upper center-block"
+                             style="background: url(<?php the_field('image1', 5); ?>);
+                                 background-size: cover; background-position: center;">
                         </div>
-                        <div class="item">
-                            <div class="upper cente-block"
-                                 style="background: url(<?php the_field('image2', 5); ?>);
-                                     background-size: cover; background-position: center;">
-                            </div>
+                    </div>
+                    <div class="item">
+                        <div class="upper cente-block"
+                             style="background: url(<?php the_field('image2', 5); ?>);
+                                 background-size: cover; background-position: center;">
                         </div>
-                        <div class="item center-block">
-                            <div class="upper"
-                                 style="background: url(<?php the_field('image3', 5); ?>);
-                                     background-size: cover; background-position: center;">
-                            </div>
+                    </div>
+                    <div class="item center-block">
+                        <div class="upper"
+                             style="background: url(<?php the_field('image3', 5); ?>);
+                                 background-size: cover; background-position: center;">
                         </div>
-                    <?php endwhile; else: ?>
-                        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
+                    </div>
                 </div>
 
                 <!-- Left and right controls -->
@@ -74,8 +71,6 @@ $aboutContent = apply_filters('the_content', $about->post_content);
 
         <div class="col-md-4 flip-images">
 
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <?php $img1 = the_field('about_image1'); ?>
                 <div class="f1_container">
                     <div class="f1_card shadow">
                         <div class="front face">
@@ -86,8 +81,6 @@ $aboutContent = apply_filters('the_content', $about->post_content);
                         </div>
                     </div>
                 </div>
-            <?php endwhile; else: ?>
-            <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
 
             <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="alt text" class="about-logo"/>
 
@@ -137,10 +130,6 @@ $ideologyContent = apply_filters('the_content', $ideology[0]->post_content);
 </div>
 
 <?php
-$inspiration = get_post(60);
-$inspirationTitle = $inspiration->post_title;
-$inspirationContent = apply_filters('the_content', $inspiration->post_content);
-
 $inspiration = get_posts(
     array(
         'name'      => 'inspiration',
@@ -170,10 +159,58 @@ $inspirationContent = apply_filters('the_content', $inspiration[0]->post_content
 
 </div>
 
+<?php
+$portfolio = get_posts(
+    array(
+        'name'      => 'portfolio',
+        'post_type' => 'page'
+    )
+);
+$portfolioTitle = $portfolio[0]->post_title;
+$portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
+?>
 
 <div id="portfolio" class="portfolio-container full-height col-md-12">
 
-    <h2>portfolio</h2>
+    <div class="container">
+
+        <h2 class="center-block">- <?php echo $portfolioTitle; ?> -</h2>
+
+        <?php
+            $args = array( 'category' => 2, 'post_type' =>  'post' );
+            $school = get_posts( $args );
+            foreach ($school as $post) :  setup_postdata($post);
+            ?>
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+            <?php echo apply_filters('the_content', $post->post_content); ?>
+
+            <?php echo get_field( "display_image" ); ?>
+
+            <?php echo get_field( "display_text" ); ?>
+
+        <?php endforeach; ?>
+
+        <?php
+            $args = array( 'category' => 3, 'post_type' =>  'post' );
+            $school = get_posts( $args );
+            foreach ($school as $post) :  setup_postdata($post);
+            ?>
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+            <?php echo apply_filters('the_content', $post->post_content); ?>
+
+            <?php echo get_field( "display_image" ); ?>
+
+            <?php echo get_field( "display_text" ); ?>
+
+        <?php endforeach; ?>
+
+        <a class="center-block down-arrow" href="#portfolio">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+
+    </div>
 
 </div>
 
