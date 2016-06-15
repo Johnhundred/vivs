@@ -82,6 +82,9 @@
         div {
           width: 101.4%;
           height: 450px;
+          background: no-repeat center center fixed;
+          background-position-x: 38% !important;
+          background-size: cover !important;
           float: left;
         }
       }
