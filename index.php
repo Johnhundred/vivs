@@ -203,7 +203,7 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
         <div class="school-projects-container col-md-5">
 
         <?php
-            $args = array( 'category' => 2, 'post_type' =>  'post' );
+            $args = array( 'category' => 2, 'post_type' =>  'post', 'orderby' => 'ID', 'order'   => 'ASC' );
             $school = get_posts( $args );
             $count = 1;
             foreach ($school as $post) :  setup_postdata($post);
