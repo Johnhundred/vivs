@@ -14,7 +14,9 @@ $carouselID = $carousel->post->ID;
     <div class="container">
 
         <div class="row center-block">
-            <div id="myCarousel" class="carousel slide center-block col-md-12" data-ride="carousel" data-interval="5000">
+
+            <div id="myCarousel" class="carousel slide center-block col-md-12" data-ride="carousel" data-interval="5000000000">
+
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner center-block" role="listbox">
                     <div class="item active">
@@ -38,14 +40,14 @@ $carouselID = $carousel->post->ID;
                 </div>
 
                 <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
-                </a>
+                </a>-->
             </div>
         </div>
 
