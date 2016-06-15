@@ -18,3 +18,75 @@
     padding: 1em !important;
   }
 }
+
+.modal-title {
+
+  font-family: $font-bold;
+
+  span {
+    width: 85px;
+    height: 1px;
+    background-color: black;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 65px;
+    margin-left: 65px;
+  }
+
+}
+
+.close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  right: 25px;
+  cursor: pointer;
+
+  .lr {
+    height: 75px;
+    width: 1px;
+    margin-left: 35px;
+    background-color: #222;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 10000010;
+
+    .rl {
+      height: 75px;
+      width: 1px;
+      background-color: #222;
+      transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      z-index: 10000010
+    }
+
+  }
+
+}
+.close-modal:hover {
+  opacity: .3
+}
+
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none
+}
+
+.btn-primary {
+  color: black;
+  background-color: $siteColor;
+  border-color: $siteColor;
+  font-family: $font-bold;
+
+
+}
+
+.btn-primary:hover {
+  color: black;
+  background-color: $siteColor;
+  border-color: $siteColor;
+  font-family: $font-bold;
+}

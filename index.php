@@ -288,7 +288,7 @@ $portfolioContent = apply_filters('the_content', $portfolio[0]->post_content);
                                         <h2><?php the_title(); ?></h2>
                                         <?php echo apply_filters('the_content', $post->post_content); ?>
 
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                        <button type="button" class="btn btn-primary center-block" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                                     </div>
                                 </div>
                             </div>
