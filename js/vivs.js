@@ -37,4 +37,7 @@ jQuery("document").ready(function(){
         });
     });
 
+    $( ".portfolio-modal h3" ).prepend( '<span class="strong-line-modal"></span>' );
+    $( ".portfolio-modal h3" ).append( '<span class="strong-line-modal"></span>' );
+
 });
