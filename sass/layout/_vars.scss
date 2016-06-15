@@ -68,7 +68,12 @@ $font-regular: 'GothamRounded-Book';
 
 .aligncenter {
   text-align: center;
+}
 
+img.alignright {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 img.aligncenter {
